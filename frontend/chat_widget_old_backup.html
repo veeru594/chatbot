@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YOI Bot</title>
+
+<style>
+  body { font-family: Inter, sans-serif; }
+
+  /* Floating Bot Icon */
+  #yoi-bot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #FF7A00; /* YOI ORANGE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    cursor: pointer;
+    animation: float 4s ease-in-out infinite;
+    z-index: 999999;
+  }
+
+  /* Bot Face Icon */
+  #yoi-bot-btn img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  /* Chat Window */
+  #yoi-chat-box {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 360px;
+    height: 500px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: pop 0.25s ease;
+    z-index: 999999;
+  }
+
+  @keyframes pop {
+    from { transform: scale(.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  /* Header */
+  #yoi-header {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  #yoi-subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: -4px;
+  }
+
+  /* Chat body */
+  #yoi-body {
+    flex: 1;
+    background: #F3F3F3;
+    overflow-y: auto;
+    padding: 12px;
+  }
+
+  .yoi-msg {
+    padding: 10px 14px;
+    border-radius: 14px;
+    margin: 8px 0;
+    max-width: 75%;
+    font-size: 14px;
+  }
+
+  .yoi-user {
+    background: #FF7A00;
+    color: white;
+    margin-left: auto;
+  }
+
+  .yoi-bot {
+    background: #FFFFFF;
+    color: black;
+    border: 1px solid #E5E5E5;
+    margin-right: auto;
+  }
+
+  /* Input */
+  #yoi-input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+
+  #yoi-input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    outline: none;
+  }
+
+  #yoi-send-btn {
+    width: 60px;
+    background: #FF7A00;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Floating Bot Button -->
+<div id="yoi-bot-btn">
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="bot">
+</div>
+
+<!-- Chat Window -->
+<div id="yoi-chat-box">
+
+  <div id="yoi-header">
+    YOI AI
+    <div id="yoi-subtitle">Your Digital Growth Partner</div>
+  </div>
+
+  <div id="yoi-body"></div>
+
+  <div id="yoi-input-area">
+    <input id="yoi-input" placeholder="Ask YOI anything...">
+    <button id="yoi-send-btn">➤</button>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("yoi-bot-btn");
+  const box = document.getElementById("yoi-chat-box");
+  const body = document.getElementById("yoi-body");
+  const input = document.getElementById("yoi-input");
+
+  let open = false;
+  let greeted = false;
+
+  /* Toggle open/close chatbot */
+  btn.onclick = () => {
+    open = !open;
+    box.style.display = open ? "flex" : "none";
+
+    if (open && !greeted) {
+      greeted = true;
+      setTimeout(() => {
+        body.innerHTML += `
+          <div class="yoi-msg yoi-bot">
+            👋 Hi! I'm <b>YOI Bot</b>. I'm here to help with YOI Media.
+          </div>`;
+        body.scrollTop = body.scrollHeight;
+      }, 300);
+    }
+  };
+
+  /* Send message */
+  document.getElementById("yoi-send-btn").onclick = () => {
+    let text = input.value.trim();
+    if (!text) return;
+
+    body.innerHTML += `<div class="yoi-msg yoi-user">${text}</div>`;
+    input.value = "";
+
+    // TEMP preview response
+    setTimeout(() => {
+      body.innerHTML += `<div class="yoi-msg yoi-bot">This is a preview response from YOI Bot.</div>`;
+      body.scrollTop = body.scrollHeight;
+    }, 400);
+  };
+</script>
+
+</body>
+</html>

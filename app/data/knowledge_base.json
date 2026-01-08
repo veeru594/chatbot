@@ -1,0 +1,192 @@
+{
+  "company": {
+    "name": "YOI Media LLP",
+    "tagline": "Human + AI = Your Growth Engine",
+    "about": "YOI Media LLP is a digital marketing and AI solutions agency based in Hyderabad, serving clients worldwide. The company blends human creativity with AI precision to drive measurable growth for global brands.",
+    "founded": "2024",
+    "founders": "Arjun Sharma,Anusri,Priya Verma, Rohit Kumar, Sneha Patel",
+    "values": ["Speed", "AI-First Thinking", "Client Obsession", "Innovation"],
+    "partners": ["Google Partner", "Meta Business Partner", "HubSpot Partner", "Shopify Plus Partner"],
+    "stats": {
+      "clients_served": "75+",
+      "countries": "15+",
+      "revenue_generated": "₹50M+",
+      "average_traffic_growth": "300%",
+      "average_cost_reduction": "45%"
+    },
+    "location": "#402, 4th Floor, Down Town Mall, Lakadikapul, Hyderabad, Telangana 500034",
+    "phone": "+91 9886942988",
+    "email": "office@yoimedia.com"
+  },
+
+  "services": {
+    "SEO & Growth": {
+      "description": "Data-driven SEO strategies that improve visibility and conversions.",
+      "key_points": [
+        "Technical SEO audits",
+        "Keyword research",
+        "On-page and off-page SEO",
+        "Local SEO & Google My Business",
+        "Content optimization",
+        "Link building"
+      ],
+      "result": "Average 300% traffic increase within 6 months"
+    },
+    "Paid Advertising": {
+      "description": "High-ROI ad campaigns across Google, Meta, and YouTube powered by AI optimization.",
+      "key_points": [
+        "Google Ads Management",
+        "Meta Ads",
+        "YouTube Advertising",
+        "Shopping Campaigns",
+        "Conversion Tracking",
+        "A/B Testing & Optimization"
+      ],
+      "result": "Average 45% cost reduction per acquisition"
+    },
+    "Social Media Marketing": {
+      "description": "Engaging content and community building to convert followers into customers.",
+      "key_points": [
+        "Content Strategy & Creation",
+        "Community Management",
+        "Influencer Marketing",
+        "Paid Social Campaigns",
+        "Analytics & Reporting"
+      ],
+      "result": "Average 250% engagement increase"
+    },
+    "Web Development": {
+      "description": "Conversion-optimized, mobile-first websites designed for performance and speed.",
+      "key_points": [
+        "Custom Web Design",
+        "E-commerce Development",
+        "Landing Page Optimization",
+        "Speed Optimization",
+        "CRO Implementation"
+      ],
+      "result": "Average 40% conversion rate improvement"
+    },
+    "Content Marketing": {
+      "description": "Strategic content creation that attracts, engages, and converts target audiences.",
+      "key_points": [
+        "Blog Writing & SEO Content",
+        "Video Content Creation",
+        "Email Marketing",
+        "Copywriting & Brand Voice",
+        "Content Distribution"
+      ],
+      "result": "Average 200% increase in qualified leads"
+    },
+    "AI Solutions": {
+      "description": "Cutting-edge AI tools for automation, content generation, and marketing optimization.",
+      "key_points": [
+        "Chatbots & Virtual Assistants",
+        "AI Content Automation",
+        "Ad Creative Generation",
+        "Predictive Analytics",
+        "Workflow Automation"
+      ],
+      "result": "Average 60% reduction in manual tasks"
+    }
+  },
+
+  "ai_solutions": {
+    "AI Chatbots": {
+      "description": "Conversational bots for 24/7 customer engagement and lead generation.",
+      "impact": "Reduce support costs by 70% while improving satisfaction."
+    },
+    "Content Automation": {
+      "description": "Generate brand-consistent content using AI models for blogs, ads, and emails.",
+      "impact": "Create 10x more content with consistent tone and quality."
+    },
+    "AI Ad Creatives": {
+      "description": "Auto-generate visuals and ad copy optimized for conversion.",
+      "impact": "Improve ad performance by 40% and reduce creative costs."
+    },
+    "Marketing Automation": {
+      "description": "Automate lead nurturing and customer journeys with smart workflows.",
+      "impact": "Increase conversion rates by 50% with personalized engagement."
+    },
+    "Predictive Analytics": {
+      "description": "Forecast trends, predict customer behavior, and optimize budgets.",
+      "impact": "Improve marketing ROI by 35% through predictive modeling."
+    },
+    "Business Process Automation": {
+      "description": "Automate repetitive business tasks like reporting, invoicing, and data entry.",
+      "impact": "Reduce manual work by 80% with near-zero human errors."
+    }
+  },
+
+  "case_studies": [
+    {
+      "client": "TechStart Solutions",
+      "industry": "SaaS",
+      "solution": "SEO + AI Content Marketing",
+      "result": "800% traffic growth, 460% more leads, 66% lower CPL"
+    },
+    {
+      "client": "Fashion Forward",
+      "industry": "E-commerce",
+      "solution": "AI-optimized Paid Ads + Social Media",
+      "result": "900% more followers, 176% higher ROAS"
+    },
+    {
+      "client": "HealthTech Pro",
+      "industry": "Healthcare",
+      "solution": "AI Chatbot + Marketing Automation",
+      "result": "300% more conversions, 50% shorter sales cycle"
+    },
+    {
+      "client": "EduLearn Platform",
+      "industry": "EdTech",
+      "solution": "Video + Multi-channel Digital Marketing",
+      "result": "700% app downloads, 380% ARR growth"
+    }
+  ],
+
+  "careers": {
+    "culture": "Fast-moving startup with AI-first mindset and global exposure.",
+    "benefits": [
+      "Competitive salary & bonuses",
+      "Flexible hours & hybrid work",
+      "Learning budget for AI tools",
+      "Team retreats & offsites"
+    ],
+    "open_roles": [
+      "SEO Specialist",
+      "AI Solutions Developer",
+      "Paid Advertising Specialist",
+      "Social Media Manager",
+      "Content Writer",
+      "Business Development Executive"
+    ]
+  },
+
+  "contact": {
+    "address": "#402, 4th Floor, Down Town Mall, Lakadikapul, Hyderabad 500034",
+    "phone": "+91 9886942988",
+    "email": "office@yoimedia.com",
+    "hours": "Mon–Fri 10AM to 7PM IST",
+    "whatsapp": "+91 9886942988",
+    "response_time": "within 24 hours"
+  },
+
+  "faq": [
+    {
+      "q": "How quickly can I see results?",
+      "a": "SEO typically shows results in 3–6 months, while paid ads can show improvements within days."
+    },
+    {
+      "q": "Do you work with international clients?",
+      "a": "Yes, we serve clients across 15+ countries worldwide."
+    },
+    {
+      "q": "Can I cancel anytime?",
+      "a": "Yes, our contracts are flexible — you can cancel with notice."
+    },
+    {
+      "q": "Do you provide reporting?",
+      "a": "Yes, we share monthly reports and real-time dashboards for every client."
+    }
+  ]
+}

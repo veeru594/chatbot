@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOI AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- YOI AI Chat Widget -->
+  <div id="yoiai-widget">
+
+    <!-- Speech Bubble -->
+    <div id="yoiai-speech-bubble" class="speech-bubble">
+      I'm Here To Help 😊
+    </div>
+
+    <!-- Floating Bot Face Button -->
+    <button id="yoiai-toggle" class="bot-face-button">
+      <img src="yoi-bot-face.png" alt="YOI Bot" class="bot-face-img">
+    </button>
+
+    <!-- Chat Box -->
+    <div id="yoiai-chatbox" class="hidden">
+
+      <!-- Header -->
+      <div id="yoiai-header">
+        <div id="yoiai-header-left">
+          <div id="yoiai-avatar">
+            <div class="avatar-glow"></div>
+            <div class="avatar-circle">
+              <img src="yoi-bot-face.png" alt="YOI Bot" style="width: 40px; height: 40px; border-radius: 50%;">
+            </div>
+          </div>
+          <div id="yoiai-title">
+            <div class="title-text">YOI AI</div>
+            <div class="subtitle-text">
+              <span class="status-dot"></span>
+              Online • Ready to help
+            </div>
+          </div>
+        </div>
+        <button id="yoiai-close" aria-label="Close chat">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="white" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Messages Container -->
+      <div id="yoiai-messages"></div>
+
+      <!-- Quick Actions -->
+      <div id="yoiai-quick-actions" class="hidden">
+        <button class="quick-btn" data-message="What services does YOI offer?">
+          <span>🎯</span> Our Services
+        </button>
+        <button class="quick-btn" data-message="How can YOI help my business?">
+          <span>💼</span> Business Solutions
+        </button>
+        <button class="quick-btn" data-message="Tell me about YOI's AI solutions">
+          <span>🤖</span> AI Solutions
+        </button>
+      </div>
+
+      <!-- Input Area -->
+      <div id="yoiai-input-area">
+        <input type="text" id="yoiai-input" placeholder="Type your message..." autocomplete="off" />
+        <button id="yoiai-send" aria-label="Send message">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="white" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chat_widget.js"></script>
+</body>
+
+</html>

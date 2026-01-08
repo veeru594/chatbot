@@ -1,0 +1,74 @@
+<!-- 
+  YOI AI Chat Widget - Embed Code
+  
+  INSTRUCTIONS:
+  Add this single line to your website's HTML (before closing </body> tag):
+  
+  <script src="http://YOUR-DOMAIN/yoi-chat-widget.js"></script>
+  
+  OR for local testing:
+  <script src="http://127.0.0.1:8080/static/yoi-chat-widget.js"></script>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOI Media - Example Page with Chat Widget</title>
+    <style>
+        /* Example website styling */
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-content {
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+
+        .demo-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .demo-content p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Your website content -->
+    <div class="demo-content">
+        <h1>🚀 YOI Media</h1>
+        <p>Your Digital Growth Partner</p>
+        <p style="font-size: 16px; margin-top: 40px; opacity: 0.7;">
+            👉 Check out the animated chat widget in the bottom-right corner!
+        </p>
+    </div>
+
+    <!-- YOI Chat Widget - Single Line Integration -->
+    <script>
+        // Configuration
+        const YOI_CHAT_CONFIG = {
+            apiUrl: 'http://127.0.0.1:8080/chat',
+            brandColor: '#FF7A00',
+            position: 'bottom-right' // or 'bottom-left'
+        };
+    </script>
+    <script src="yoi-chat-widget.js"></script>
+
+</body>
+
+</html>
